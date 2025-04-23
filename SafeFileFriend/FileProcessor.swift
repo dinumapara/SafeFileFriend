@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol FileProcessor {
+    /// Transform the file at `fileURL` and return a new URL.
+    func process(fileURL: URL) throws -> URL
+}
+

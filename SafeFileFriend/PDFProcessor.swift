@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct PDFProcessor: FileProcessor {
+    func process(fileURL: URL) throws -> URL {
+        // TODO: implement PDF-specific transformation
+        return fileURL
+    }
+}
